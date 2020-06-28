@@ -44,13 +44,12 @@ int main(void)
 	puts(" 5)  exit.");
 	printf("*********************************************\n");
 	//part two  *order print  
-		//okkokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokok
 	printf("Please enter a number:");
 	while (scanf_s("%d", &command) == 1)
 	{
 		switch (command)
 		{
-		case 1:///////////////////////////complete!!!!!!!!!
+		case 1:
 			function_first(str);
 			break;
 		case 2:
@@ -62,7 +61,7 @@ int main(void)
 		case 4:
 			function_fourth(str);
 			break;
-		case 5:///////////////////////////complete!!!!!!!!!
+		case 5:
 			exit = true;
 			break;
 		}
@@ -76,7 +75,7 @@ int main(void)
 	return 0;
 }
 //part four  *function design
-void function_first(char str[][LEN])////////////////////////////
+void function_first(char str[][LEN])
 {
 	int count = 1;
 	const char(*pt)[LEN] = str;           //way 1
